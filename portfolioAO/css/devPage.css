@@ -1,0 +1,186 @@
+.designHeader
+{
+    font-size: 3rem;
+    margin-top: 7%;
+    margin-left: 2%;
+
+}
+.designSubHeader
+{
+    font-size: 1.5rem;
+    margin-left: 2%;
+    padding-top: 1%;
+
+}
+
+@media screen and (max-width: 1000px) 
+{
+    .designHeader
+    {
+        margin-top: 11%;
+        margin-left: 2%;
+    }
+   
+}
+
+@media screen and (max-width: 755px) 
+{
+    .designHeader
+    {
+        margin-top: 20%;
+        margin-left: 2%;
+    }
+   
+}
+
+
+/* --------------------------------- */
+
+/* flexbox */
+
+.rfBox 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.rfBox-cont
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.rfBox-cont2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.rfBox-image 
+{
+    flex: 1;
+    padding: 1 0rem; /* Add some space around the image */
+    text-align: center; /* Center the image horizontally */
+    order: 2;
+}
+
+.rfBox-text
+{
+    flex: 1;
+    padding: 5rem 5rem; /* Add some space around the text */
+    order: 1;
+    margin-left: 5rem;
+}
+
+.rfBox-text3
+{
+    flex: 1;
+    padding: 10rem 10rem; /* Add some space around the text */
+    order: 1;
+    margin-left: 5rem;
+    text-align: center;
+}
+
+.rfBox-image2 {
+    display: flex; /* Create a flex container for the images */
+    flex-wrap: wrap;
+    align-items: center; /* Vertically center the images within the container */
+    justify-content: center;
+}
+
+.rfBox-image2 img {
+    max-width: 100%; /* Divide equally for five images */
+    max-height: 100%;
+    margin: 0; /* Add spacing between the images */
+    margin-top: 5%;
+}
+
+.rfBox-image3
+{
+    flex: 1;
+    padding: 1 0rem; /* Add some space around the image */
+    text-align: center; /* Center the image horizontally */
+    order: 2;
+}
+
+.rfBox-image4
+{
+    flex: 1;
+    padding: 1 0rem; /* Add some space around the image */
+    text-align: center; /* Center the image horizontally */
+    order: 1;
+}
+
+
+.rfPic {
+    width: 100%;
+    height: auto; /* Let the height adjust automatically */
+}
+
+.rfBox-images {
+    display: flex; /* Create a flex container for the images */
+    flex-wrap: wrap;
+    align-items: center; /* Vertically center the images within the container */
+    justify-content: center;
+}
+
+.rfBox-images img {
+    display: flex; /* Create a flex container for the images */
+    max-width: 20%; /* Divide equally for five images */
+    max-height: auto;
+    margin: 0; /* Add spacing between the images */
+    padding: 1rem;
+}
+
+
+
+@media screen and (max-width: 1300px) 
+{
+    .rfBox, .rfBox-cont
+    {
+        flex-direction: column;
+    }
+
+    .rfBox-cont2
+    {
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    .rfBox-text 
+    {
+        margin-left: 0;
+        text-align: center;
+        order:2;
+    }
+
+    .rfBox-text3
+    {
+        margin-left: 0;
+        text-align: center;
+        order:2;
+    }
+
+    .rfBox-image
+    {
+        margin-top: 5%;
+        flex:1;
+        order: 1;
+    }
+
+    .rfBox-image2 {
+
+        margin-top: 0;
+    }
+
+}

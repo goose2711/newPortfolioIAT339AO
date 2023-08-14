@@ -1,0 +1,184 @@
+.designHeader
+{
+    font-size: 3rem;
+    margin-top: 7%;
+    margin-left: 2%;
+
+}
+.designSubHeader
+{
+    font-size: 1.5rem;
+    margin-left: 2%;
+    padding-top: 1%;
+
+}
+
+@media screen and (max-width: 1000px) 
+{
+    .designHeader
+    {
+        margin-top: 11%;
+        margin-left: 2%;
+    }
+   
+}
+
+@media screen and (max-width: 755px) 
+{
+    .designHeader
+    {
+        margin-top: 20%;
+        margin-left: 2%;
+    }
+   
+}
+
+/* --------------------------------- */
+
+/* profile picture flexbox and bio */
+
+.dfBox 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.dfBox-image 
+{
+    flex: 1.2;
+    padding: 0 1rem; /* Add some space around the image */
+    text-align: center; /* Center the image horizontally */
+    order: 2;
+}
+
+.dfBox-image img 
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.dfBox-image2 
+{
+    flex: 1;
+    padding: 0 1rem; /* Add some space around the image */
+    text-align: center; /* Center the image horizontally */
+    order: 1;
+}
+
+.dfBox-image2 img 
+{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.dfBox-image3 
+{
+    flex: 0.5;
+    padding: 0 1rem; /* Add some space around the image */
+    text-align: center; /* Center the image horizontally */
+    order: 2;
+}
+
+.dfBox-image3 img 
+{
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.dfBox-text,
+.dfBox-text2
+{
+    flex: 1;
+    padding: 0 1rem; /* Add some space around the text */
+    order: 1;
+    margin-left: 5rem;
+}
+
+.dfBox-text3
+{
+    flex: 1;
+    padding: 0 1rem; /* Add some space around the text */
+    order: 1;
+    margin-left: 5rem;
+    margin-top: 10%;
+}
+
+
+.dfPic {
+    width: 100%;
+    height: auto; /* Let the height adjust automatically */
+}
+
+.dfBox-images {
+    display: flex; /* Create a flex container for the images */
+    flex-wrap: wrap;
+    align-items: center; /* Vertically center the images within the container */
+    justify-content: center;
+}
+
+.dfBox-images img {
+    max-width: 80%; /* Divide equally for five images */
+    max-height: auto;
+    margin: 0; /* Add spacing between the images */
+}
+
+
+
+@media screen and (max-width: 1300px) 
+{
+    .dfBox 
+    {
+        flex-direction: column;
+    }
+
+    .dfBox-text 
+    {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10%;
+    }
+    .dfBox-text2 
+    {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .dfBox-image
+    {
+        flex:1;
+    }
+
+    .dfBox-image2 
+    {
+        flex: 0.5;
+        order:2;
+        margin-top: 10%;
+    }
+
+    .dfBox-image img
+    {
+        max-width: 100%;
+        max-height: 100%; 
+    }
+    .dfBox-image2 img 
+    {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+    .dfBox-image3
+    {
+        flex: 0.5;
+        order:2;
+        margin-top: 10%;
+    }
+
+    .dfBox-image3 img 
+    {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+}

@@ -1,0 +1,347 @@
+*, 
+*::before, 
+*::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "NHaasGroteskDSP-light"; 
+    color: #000;
+    margin: 0;
+}
+
+h1
+{
+    font-family: "NHaasGroteskDSP-medium"; 
+    font-size: 6rem;
+    color: #000;
+}
+
+h2
+{
+    font-family: "NHaasGroteskDSP-elight"; 
+    padding-top: 3%;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+p
+{
+    font-family: "NHaasGroteskDSP-light"; 
+    color: #000;
+    font-size: 1rem;
+}
+
+.bio
+{
+    font-size: 1.2rem;
+}
+
+.profilePic
+{
+    width: 40%;
+    height: 40%;
+}
+
+
+/* Nav Bar */
+/* --------------------------------- */
+header
+{
+    width:100%;
+    position: fixed;
+}
+
+header nav
+{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    z-index: 100;
+}
+
+header ul
+{
+    display: flex;
+    list-style: none;
+    left: 0;
+    margin: 0px;
+    color: #000;
+}
+
+li 
+{
+    text-decoration: none;
+    color: black;
+    align-items: flex-end;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+  }
+  
+  #right 
+  {
+  margin-left: auto;
+  }
+
+header ul a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.stylea
+{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+a:hover
+{
+    opacity: 30%;
+}
+a:visited
+{
+    color:#000;
+}
+
+.projects
+{
+    font-family: "NHaasGroteskDSP-roman"; 
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+    margin: 0;
+}
+
+/* --------------------------------- */
+
+/*  list elements padding adjustment */
+li:nth-child(1) 
+{
+    padding-left: 40%; 
+    padding-right: 0%;
+}
+
+li:nth-child(2) 
+{
+    padding-left: 5%; 
+    padding-right: 0%;
+}
+
+li:nth-child(3) 
+{
+    padding-left: 5%;
+    padding-right: 0%;
+}
+
+/* --------------------------------- */
+/* flex for projects page */
+
+.container 
+{
+    height: 100vh;
+    display: flex; /* Use flexbox to center vertically */
+    align-items: center; /* Center vertically */
+    padding-bottom: 7%;
+    justify-content: space-around;
+  }
+  
+.center-box 
+{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center; /* Center vertically */
+
+}
+
+.container2
+{
+    display: flex; /* Use flexbox to center vertically */
+    align-items: center; /* Center vertically */
+  }
+  
+.center-box2
+{
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    align-items: center; /* Center vertically */
+
+}
+
+a.projects 
+{
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+a.projects:hover 
+{
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+}
+/* --------------------------------- */
+
+/* profile picture flexbox and bio */
+
+.fBox 
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10%; */
+}
+
+.sg
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10%; */
+}
+
+.fBox > * 
+{
+    flex: 1 1 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fBox-image 
+{
+    flex: 1 1 40%;
+    /* Remove the margin-left */
+    /* margin-left: 20%; */
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+}
+
+.fBox-image img 
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fBox-text 
+{
+    flex: 1 1 10em;
+    padding: 0 1rem;
+    order: 2;
+    width: 100%;
+    flex-grow: 11;
+    /* justify-content: center; Remove this line */
+    margin-right: 15%;
+}
+
+@media screen and (max-width: 1000px) 
+{
+    .fBox 
+    {
+        flex-wrap: wrap;    
+        justify-content: center;
+    }
+
+    .fBox-text 
+    {
+        flex: 0 0 100%;  
+        display: flex;
+        align-items: center; /* Align text to the bottom of the container */
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .fBox-image 
+    {
+        flex: 1 1 100%; /* Image should take full width */
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Center the image vertically */
+    }
+
+    .fBox-image img 
+    {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+/* --------------------------------- */
+
+/* triangles */
+
+
+.triangle-1
+{
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    background-size: contain;
+    opacity: 90%;
+}
+
+.triangle-2
+{
+    position: fixed;
+    top: 0vh;
+    right: 10vw;
+    background-size: contain;
+    opacity: 90%;
+}
+
+.triangle-3
+{
+    position: fixed;
+    bottom: 0vh;
+    left: 20vw;
+    background-size: contain;
+    opacity: 90%;
+}
+
+.triangle-4
+{
+    position: fixed;
+    bottom: 0vh;
+    right: 6vw;
+    background-size: contain;
+    opacity: 90%;
+}
+
+
+
+/* --------------------------------- */
+
+
+.stylebox 
+{
+    display: flex; /* Use flexbox to center vertically */
+    align-items: center; /* Center vertically */
+    padding-bottom: 1%;
+    justify-content: center;
+
+}
+
+.stylebox-item-heading
+{
+    text-align: center;
+}
+
+
+
+

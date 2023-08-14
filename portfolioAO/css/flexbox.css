@@ -1,0 +1,21 @@
+*, *::after, *::before 
+{
+	box-sizing: border-box;
+}
+
+.Mainbox 
+{
+    /* Set the box to take the full height of the viewport */
+    height: 100vh;
+    display: flex; /* Use flexbox to center vertically */
+    align-items: center; /* Center vertically */
+    padding-bottom: 7%;
+    justify-content: center;
+
+}
+
+.Mainbox-item-heading
+{
+    text-align: center;
+}
+

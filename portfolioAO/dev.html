@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/devPage.css">  
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/fonts.css"/>
+</head>
+<body>
+
+                <!-- wrap nav bar under header tag -->
+                <header> 
+                    <!-- wrap navbar elements under nav tag -->
+                    <nav>
+                        <!-- use unordered list for links in nav bar -->
+                        <ul>
+                            <li id="right">
+                                <a href="index.html">home</a>
+                            </li>
+                            <li id="right">
+                                <a href="projects.html">projects</a>
+                            </li>
+                            <li id="right">
+                                <a href="contact.html">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+    
+                <img class="triangle-1" src="Images/triangle1.png" id="triangle-1" style="opacity: 50%;"></img>
+                <img class="triangle-2" src="Images/triangle2.png" id="triangle-2" style="opacity: 50%;"></img>
+                <img class="triangle-3" src="Images/triangle3.png" id="triangle-3" style="opacity: 50%;"></img>
+                <img class="triangle-4" src="Images/triangle4.png" id="triangle-4" style="opacity: 50%;"></img>
+                <script src="JavaScript/script.js"></script>
+    
+            
+                <br></br>
+
+                <main>
+                    <h1 class="designHeader">Process Analysis</h1>
+                    <h2 class="designSubHeader">"Run It up" Android app</h2>
+                    <br></br>
+
+                    <div class="rfBox">
+                        <div class="rfBox-image">
+                            <img class="dfPic" src="./Images/appLogo.png" alt="Bad image">
+                        </div>
+                        <div class="rfBox-text">
+                            <p class="bio">
+                                This project was done by me and my teammate Olivia Steed. It is an Android  running app allowing users to set a running goal and track their progress. They can see a weekly overview of their stats on the dashboard or detailed stats by run or stat type in the stats activity. Users can input data from past runs, schedule future runs, and record current runs. During a run, the user’s steps, activity time, distance, calories burned, and route are saved and added to the stat logs. After a run, users are prompted to add to their run journal to reflect on how they feel and schedule their next run with a message of encouragement. They can also view recovery information on the importance of stretching, nutrition, and safety to emphasize the importance of a healthy lifestyle.                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rfBox">
+                        <div class="rfBox-image2">
+                            <img class="dfPic" src="./Images/fChart.png" alt="Image 1">
+                        </div>
+                    </div>
+
+                    <div class="rfBox-text3">
+                        <p class="bio">
+                            We first started this project by planning a tentative timeline and set an achievable goal. I  initially started out the work for this application by planning out its structure using a flowchart to determine the classes and their required methods. While i was doing that, my teammate worked on some initial designs for how the interface would look. Above is the application flowchart that i have come up with that gave us a starting point.                      </p>
+                    </div>
+
+
+                    <div class="rfBox-cont">
+                        <div class="rfBox-image3">
+                            <img class="dfPic" src="./Images/r1.png" alt="Bad image">
+                        </div>
+                        <div class="rfBox-text">
+                            <p class="bio">
+                                For my contribution to this project, i have worked on the figuring out the calculations for distance travelled, steps taken, calories burnt, pace and route saving and tracking. I used the on board device accelerometer sensor  to set a threshold for the x,y and z axis. Utilising the users height and sex, i calculated a stride length as the threshold and when the sensors axis crosses that threshold, i counted it as one step.  Furthermore,  i have used an algorithm that calculates the bmi using the user data and based on the steps they have taken, calculates the calories they have burnt. I have then used the on board device GPS to ping users coordinates every 0.3 seconds as they run and stored the longitude and latitude as key-value pairs into an Array list and display them as a path along a polygon on google maps. I have used SQLite databases to store both user run data and GPS data.                         </div>
+                    </div>
+
+                    <div class="rfBox-cont2">
+                        <div class="rfBox-image4">
+                            <img class="dfPic" src="./Images/r2.png" alt="Bad image">
+                        </div>
+                        <div class="rfBox-text">
+                            <p class="bio">
+                                The biggest challenge for me has been saving the run route in a SQLite table corresponding to the run stats table and retrieving this data to show as a run route polyline. However, with constant support from our Professor Miss Helmine Serban and our TA Son, i managed to implement this feature on schedule and completed the application. 
+                                <br></br>
+                                We are very proud of this project and managed to secure 100% (A+) for the entirety of the submission. Below are snapshots of the application interface.                     </div>
+                            </p>
+                        </div>
+                    </div>
+                                <div class="rfBox">
+                                    <div class="rfBox-images">
+                                        <img class="rfPic" src="./Images/r3.png" alt="Image 1">
+                                        <img class="rfPic" src="./Images/r4.png" alt="Image 2">
+                                        <img class="rfPic" src="./Images/r5.png" alt="Image 3">
+                                        <img class="rfPic" src="./Images/r6.png" alt="Image 4">
+                                        <img class="rfPic" src="./Images/r7.png" alt="Image 5">
+                                        <img class="rfPic" src="./Images/r8.png" alt="Image 1">
+                                        <img class="rfPic" src="./Images/r9.png" alt="Image 2">
+                                        <img class="rfPic" src="./Images/r10.png" alt="Image 3">
+                                        <img class="rfPic" src="./Images/r11.png" alt="Image 4">
+                                        <img class="rfPic" src="./Images/r12.png" alt="Image 5">
+                                        <img class="rfPic" src="./Images/r13.png" alt="Image 1">
+                                        <img class="rfPic" src="./Images/r14.png" alt="Image 2">
+                                        <img class="rfPic" src="./Images/r15.png" alt="Image 3">
+                                        <img class="rfPic" src="./Images/r16.png" alt="Image 4">
+                                        <img class="rfPic" src="./Images/r17.png" alt="Image 5">
+                                        <img class="rfPic" src="./Images/r18.png" alt="Image 1">
+                                        <img class="rfPic" src="./Images/r19.png" alt="Image 2">
+                                        <img class="rfPic" src="./Images/r20.png" alt="Image 3">
+                                        <img class="rfPic" src="./Images/r21.png" alt="Image 4">
+                                        <img class="rfPic" src="./Images/r22.png" alt="Image 5">
+                                        <img class="rfPic" src="./Images/r23.png" alt="Image 3">
+                                        <img class="rfPic" src="./Images/r24.png" alt="Image 4">
+                                        <img class="rfPic" src="./Images/r25.png" alt="Image 5">
+                                    </div>
+                                </div>
+                </main>
+    
+</body>
+</html>
